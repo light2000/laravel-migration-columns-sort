@@ -35,14 +35,4 @@ class Schema extends BaseSchema
     {
         return self::withBlueprintResolver(parent::connection($name));
     }
-
-    /**
-     * Get a schema builder instance for the default connection.
-     *
-     * @return Builder
-     */
-    protected static function getFacadeAccessor()
-    {
-        return self::withBlueprintResolver(parent::getFacadeAccessor());
-    }
 }
